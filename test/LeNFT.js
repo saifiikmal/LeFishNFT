@@ -87,7 +87,7 @@ describe("LeNFT", function () {
     redeem = redeem.connect(redeemProvider.getSigner(user.address))
   });
 
-  it("Mint", async function () {
+  it("Purchase", async function () {
     utility = utility.connect(user)
     await expect(utility.purchase(1, {
       value: price,
